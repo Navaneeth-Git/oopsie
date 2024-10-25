@@ -7,7 +7,7 @@
 
 ### Team Members
 - Team Lead: Navaneeth Nandakumar - SCMS School of Engineering and Technology
-- Member 2: Arfan - SCMS School of Engineering and Technology
+- Member 2: Gayrfan - SCMS School of Engineering and Technology
 
 ### Project Description
 This project presents a seemingly simple typing task but randomly introduces subtle errors as the user types. The twist? Users aren’t sure if the typos are their own or if the program is messing with them, creating a funny and confusing experience.
