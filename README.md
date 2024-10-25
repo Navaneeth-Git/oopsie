@@ -1,101 +1,66 @@
 <img width="1280" alt="readme-banner" src="https://github.com/user-attachments/assets/35332e92-44cb-425b-9dff-27bcf1023c6c">
+Impossible Typing Challenge 🎯
+Basic Details
+Team Name: Commitment Issues
+Team Members
+Team Lead: Navaneeth Nandakumar - SCMS School of Engineering and Technology
+Member 2: Arfan - SCMS School of Engineering and Technology
+Project Description
+This project presents a seemingly simple typing task but randomly introduces subtle errors as the user types. The twist? Users aren’t sure if the typos are their own or if the program is messing with them, creating a funny and confusing experience.
 
-# [Project Name] 🎯
+The Problem (that doesn't exist)
+Ever been so confident in your typing skills that you wish a program would throw you off balance just to challenge you? The world needs a way to make typing a funny, frustrating experience—and we’re here to deliver.
 
+The Solution (that nobody asked for)
+By subtly altering characters at random times, our program adds just the right amount of uncertainty. With each keystroke, users are left wondering if they made the error or if the system is toying with them. It’s a typing challenge for those who dare!
 
-## Basic Details
-### Team Name: [Name]
-
-
-### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
-
-### Project Description
-[2-3 lines about what your project does]
-
-### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
-
-### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
-
-## Technical Details
-### Technologies/Components Used
-For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
-
-For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
-
-### Implementation
-For Software:
-# Installation
-[commands]
-
-# Run
-[commands]
-
-### Project Documentation
+Technical Details
+Technologies/Components Used
 For Software:
 
-# Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
-
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
-
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
-
-# Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
-
+Languages used: JavaScript, HTML, CSS
+Frameworks used: None (pure JavaScript for simplicity)
+Libraries used: None
+Tools used: Visual Studio Code, GitHub
 For Hardware:
 
-# Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
+None required (browser-based app)
+Implementation
+For Software:
 
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
+Installation
+bash
+Copy code
+# Clone the repository
+git clone https://github.com/yourusername/ImpossibleTypingChallenge.git
 
-# Build Photos
-![Components](Add photo of your components here)
-*List out all components shown*
+# Navigate to the project directory
+cd ImpossibleTypingChallenge
+Run
+Simply open index.html in your preferred browser.
 
-![Build](Add photos of build process here)
-*Explain the build steps*
+Project Documentation
+For Software:
 
-![Final](Add photo of final product here)
-*Explain the final build*
+Screenshots
+![Screenshot1](Add screenshot 1 here with proper name) Main screen with typing instructions and input field.
 
-### Project Demo
-# Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
+![Screenshot2](Add screenshot 2 here with proper name) Shows a randomly introduced typo in user’s input.
 
-# Additional Demos
-[Add any extra demo materials/links]
+![Screenshot3](Add screenshot 3 here with proper name) User successfully completes typing without typos.
 
-## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+Diagrams
+![Workflow](Add your workflow/architecture diagram here) Diagram showing the typo generation logic and user input flow.
 
----
-Made with ❤️ at TinkerHub Useless Projects 
+Project Demo
+Video
+[Demo Video Link](Add link here) Demonstrates how the typing challenge messes with users by introducing subtle typos.
 
-![Static Badge](https://img.shields.io/badge/TinkerHub-24?color=%23000000&link=https%3A%2F%2Fwww.tinkerhub.org%2F)
-![Static Badge](https://img.shields.io/badge/UselessProject--24-24?link=https%3A%2F%2Fwww.tinkerhub.org%2Fevents%2FQ2Q1TQKX6Q%2FUseless%2520Projects)
+Additional Demos
+[Optional additional demo links]
 
-
+Team Contributions
+Navaneeth Nandakumar: Developed typo generation logic and interface.
+Arfan: Designed UI and refined CSS for better usability.
+Made with ❤️ at TinkerHub Useless Projects
 
