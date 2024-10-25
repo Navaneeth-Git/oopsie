@@ -1,60 +1,115 @@
-const sentences = [
-  "The quick brown fox jumps over the lazy dog.",
-  "Pack my box with five dozen liquor jugs.",
-  "How vexingly quick daft zebras jump!",
-  "Jinxed wizards pluck ivy from the big quilt.",
-  "Bright vixens jump; dozy fowl quack.",
-  "Quick wafting zephyrs vex bold Jim."
-];
-
-const inputField = document.getElementById("inputField");
-const message = document.getElementById("message");
-const sentenceDisplay = document.getElementById("sentence");
-const refreshButton = document.getElementById("refreshButton");
-
-let currentSentence = sentences[0];
-let errorInterval = 4;  // introduce an error every 4 characters typed
-
-// Function to get a random sentence
-function getRandomSentence() {
-  return sentences[Math.floor(Math.random() * sentences.length)];
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
-// Function to reset input field and message
-function resetInput() {
-  inputField.value = "";
-  message.innerText = "Can you type it correctly?";
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+  color: #424242;
 }
 
-// Refresh button event listener to set a new sentence
-refreshButton.addEventListener("click", () => {
-  currentSentence = getRandomSentence();
-  sentenceDisplay.innerText = `Type this sentence: "${currentSentence}"`;
-  resetInput();
-});
-
-// Function to introduce a random typo at a random position
-function introduceTypo(text) {
-  const randomIndex = Math.floor(Math.random() * text.length);
-  const randomChar = String.fromCharCode(97 + Math.floor(Math.random() * 26));
-  return text.substring(0, randomIndex) + randomChar + text.substring(randomIndex + 1);
+.container {
+  background: #ffffff;
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-// Event listener to handle input and introduce typos as the user types
-inputField.addEventListener("input", () => {
-  let typedText = inputField.value;
+h1 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #1e88e5;
+  margin-bottom: 1.5rem;
+}
 
-  // Check if the typed text length is a multiple of errorInterval to introduce a typo
-  if (typedText.length > 0 && typedText.length % errorInterval === 0) {
-    typedText = introduceTypo(typedText);
-    inputField.value = typedText;
-    message.innerText = "Oops! Typo detected. Try to continue...";
-  }
+p {
+  font-size: 1.1rem;
+  color: #757575;
+  margin-bottom: 1.5rem;
+}
 
-  // If the typed text matches the sentence, reset with a success message
-  if (typedText.toLowerCase() === currentSentence.substring(0, typedText.length).toLowerCase()) {
-    message.innerText = "Can you type it correctly?";
-  } else {
-    message.innerText = "Oops! Typo detected. Try to continue...";
-  }
-});
+#inputField {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+#inputField:focus {
+  outline: none;
+  border-color: #1e88e5;
+  box-shadow: 0 0 8px rgba(30, 136, 229, 0.3);
+}
+
+#message {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #e53935;
+}
+
+button {
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #1e88e5;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+  background-color: #1565c0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Add this CSS below the existing styles */
+
+.sentence-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+/* Add this CSS below the existing styles */
+
+#refreshButton {
+  background: #1e88e5;
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 8px rgba(30, 136, 229, 0.2);
+}
+
+#refreshButton:hover {
+  background-color: #1565c0;
+  box-shadow: 0 6px 12px rgba(21, 101, 192, 0.3);
+}
+
+#refreshButton:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 6px rgba(21, 101, 192, 0.3);
+}
