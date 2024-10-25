@@ -3,12 +3,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Google Sans', sans-serif; /* Google Sans applied */
 }
 
 body {
-  background-color: #121212;
-  color: #ffffff;
+  background-color: #ffffff; /* White background */
+  color: #000000; /* Black text color */
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -24,7 +24,7 @@ body {
 /* Title */
 h1 {
   font-size: 2.5rem;
-  color: #ffffff;
+  color: #000000; /* Black for the title */
   margin-bottom: 1.5rem;
 }
 
@@ -39,24 +39,26 @@ h1 {
 /* Sentence */
 #sentence {
   font-size: 1.2rem;
-  color: #b0b0b0;
+  font-weight: bold; /* Bold the sentence */
+  color: #4a4a4a; /* Dark grey for the sentence */
   margin-right: 10px;
 }
 
-/* Refresh Button */
+/* Refresh Button with Transparent Background */
 #refreshButton {
-  background-color: #03dac6;
+  background-color: transparent; /* Transparent background */
   border: none;
-  color: #121212;
+  color: #4a4a4a; /* Dark grey icon color */
   font-size: 1.5rem;
-  padding: 10px;
   cursor: pointer;
-  border-radius: 50%;
-  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s;
 }
 
 #refreshButton:hover {
-  background-color: #018786;
+  color: #000000; /* Darker icon color on hover */
 }
 
 /* Input Field */
@@ -64,26 +66,20 @@ h1 {
   width: 100%;
   padding: 12px;
   font-size: 1.2rem;
-  background-color: transparent;
-  color: #b0b0b0;
-  border: 2px solid #b0b0b0; /* Light grey border */
-  border-radius: 8px;
+  background-color: #f0f0f0; /* Light grey background for the text input */
+  color: #000000; /* Black text */
+  border: none; /* No border */
+  border-radius: 30px; /* More rounded corners */
   outline: none;
-  transition: border-color 0.3s;
 }
 
 #inputField::placeholder {
-  color: #757575;
-}
-
-/* Input Field Focused */
-#inputField:focus {
-  border-color: #03dac6;
+  color: #757575; /* Medium grey for the placeholder */
 }
 
 /* Message Text */
 #message {
   margin-top: 1.5rem;
-  color: #b0b0b0;
+  color: #4a4a4a; /* Dark grey for the message */
   font-size: 1rem;
 }
