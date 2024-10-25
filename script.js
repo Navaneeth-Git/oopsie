@@ -1,60 +1,45 @@
-const sentences = [
-  "The quick brown fox jumps over the lazy dog.",
-  "Pack my box with five dozen liquor jugs.",
-  "How vexingly quick daft zebras jump!",
-  "Jinxed wizards pluck ivy from the big quilt.",
-  "Bright vixens jump; dozy fowl quack.",
-  "Quick wafting zephyrs vex bold Jim."
-];
-
+const sentence = "The quick brown fox jumps over the lazy dog.";
 const inputField = document.getElementById("inputField");
 const message = document.getElementById("message");
-const sentenceDisplay = document.getElementById("sentence");
-const refreshButton = document.getElementById("refreshButton");
 
-let currentSentence = sentences[0];
-let errorInterval = 4;  // introduce an error every 4 characters typed
-
-// Function to get a random sentence
-function getRandomSentence() {
-  return sentences[Math.floor(Math.random() * sentences.length)];
-}
-
-// Function to reset input field and message
-function resetInput() {
-  inputField.value = "";
-  message.innerText = "Can you type it correctly?";
-}
-
-// Refresh button event listener to set a new sentence
-refreshButton.addEventListener("click", () => {
-  currentSentence = getRandomSentence();
-  sentenceDisplay.innerText = `Type this sentence: "${currentSentence}"`;
-  resetInput();
-});
-
-// Function to introduce a random typo at a random position
-function introduceTypo(text) {
+// Function to introduce a subtle typo
+function introduceSubtleTypo(text) {
   const randomIndex = Math.floor(Math.random() * text.length);
-  const randomChar = String.fromCharCode(97 + Math.floor(Math.random() * 26));
-  return text.substring(0, randomIndex) + randomChar + text.substring(randomIndex + 1);
-}
+  let typoChar = text[randomIndex];
 
-// Event listener to handle input and introduce typos as the user types
-inputField.addEventListener("input", () => {
-  let typedText = inputField.value;
-
-  // Check if the typed text length is a multiple of errorInterval to introduce a typo
-  if (typedText.length > 0 && typedText.length % errorInterval === 0) {
-    typedText = introduceTypo(typedText);
-    inputField.value = typedText;
-    message.innerText = "Oops! Typo detected. Try to continue...";
+  // Introduce a typo similar to common typing mistakes
+  if (Math.random() < 0.5) {
+    typoChar = typoChar.toLowerCase() === typoChar 
+               ? typoChar.toUpperCase() 
+               : typoChar.toLowerCase(); // Subtle case change
+  } else {
+    // Replace with an adjacent key character (limited to common letters)
+    const adjacentKeys = { e: "r", r: "e", u: "i", i: "u", o: "p", p: "o" };
+    typoChar = adjacentKeys[typoChar] || typoChar;
   }
 
-  // If the typed text matches the sentence, reset with a success message
-  if (typedText.toLowerCase() === currentSentence.substring(0, typedText.length).toLowerCase()) {
-    message.innerText = "Can you type it correctly?";
+  return text.substring(0, randomIndex) + typoChar + text.substring(randomIndex + 1);
+}
+
+// Lower probability for typo
+function shouldIntroduceTypo() {
+  return Math.random() < 0.1; // 10% chance of typo on each input
+}
+
+// Event listener to handle input
+inputField.addEventListener("input", () => {
+  let currentInput = inputField.value;
+
+  // Introduce subtle typos occasionally
+  if (shouldIntroduceTypo()) {
+    inputField.value = introduceSubtleTypo(currentInput);
+    message.innerText = "Oops! Seems like there's a typo. Try again!";
   } else {
-    message.innerText = "Oops! Typo detected. Try to continue...";
+    // Check if it matches the sentence (ignoring case)
+    if (currentInput.toLowerCase() === sentence.toLowerCase()) {
+      message.innerText = "Great job! You typed it correctly!";
+    } else {
+      message.innerText = "Keep going...";
+    }
   }
 });
