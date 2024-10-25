@@ -69,7 +69,7 @@ h1 {
   background-color: #f0f0f0; /* Light grey background for the text input */
   color: #000000; /* Black text */
   border: none; /* No border */
-  border-radius: 30px; /* More rounded corners */
+  border-radius: 60px; /* More rounded corners */
   outline: none;
 }
 
@@ -82,4 +82,25 @@ h1 {
   margin-top: 1.5rem;
   color: #4a4a4a; /* Dark grey for the message */
   font-size: 1rem;
+}
+
+/* Refresh Button with PNG Image */
+#refreshButton {
+  background-color: transparent; /* Transparent background */
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s;
+}
+
+#refreshButton img {
+  width: 24px; /* Set image size */
+  height: 24px;
+}
+
+#refreshButton:hover img {
+  filter: brightness(0.7); /* Darker icon color on hover */
 }

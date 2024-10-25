@@ -1,4 +1,4 @@
-const sentence = "The quick brown fox jumps over the lazy dog.";
+const sentence = "The quick brown fox jumps over the lazy dog";
 const inputField = document.getElementById("inputField");
 const message = document.getElementById("message");
 
