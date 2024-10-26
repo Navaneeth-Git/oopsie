@@ -58,12 +58,13 @@ For Software:
 
 ### Project Demo
 # Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
+
+![Demo Video](Demo.mp4)
 
 ## Team Contributions
 
 -Navaneeth Nandakumar: Developed typo generation logic and interface.
+
 -Arfan: Dsesigned UI and refined CSS for better usability.
 
 
