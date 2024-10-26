@@ -43,9 +43,6 @@ cd ImpossibleTypingChallenge
 # Run
 https://oopsie.vercel.app/
 
-### Project Documentation
-For Software:
-
 # Screenshots (Add at least 3)
 ![WhatsApp Image 2024-10-26 at 08 17 42](https://github.com/user-attachments/assets/a9311fab-8c10-4421-a642-8097eecb0067)
 ![WhatsApp Image 2024-10-26 at 08 19 01](https://github.com/user-attachments/assets/422297dd-4df0-4e0f-a10b-8ef1510b5e5d)
