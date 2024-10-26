@@ -39,6 +39,31 @@ git clone https://github.com/yourusername/ImpossibleTypingChallenge.git
 # Navigate to the project directory
 cd ImpossibleTypingChallenge
 ```
+
+# Run
+https://oopsie.vercel.app/
+
+### Project Documentation
+For Software:
+
+# Screenshots (Add at least 3)
+![Screenshot1](Add screenshot 1 here with proper name)
+*Add caption explaining what this shows*
+
+![Screenshot2](Add screenshot 2 here with proper name)
+*Add caption explaining what this shows*
+
+![Screenshot3](Add screenshot 3 here with proper name)
+*Add caption explaining what this shows*
+
+### Project Demo
+# Video
+[Add your demo video link here]
+*Explain what the video demonstrates*
+
+## Team Contributions
+Navaneeth Nandakumar: Developed typo generation logic and interface.
+Arfan: Designed UI and refined CSS for better usability.
 ---
 Made with ❤️ at TinkerHub Useless Projects by Arfan & Navaneeth
 
