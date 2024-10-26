@@ -34,10 +34,8 @@ For Software:
 #### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/ImpossibleTypingChallenge.git
+git clone https://github.com/Navaneeth-Git/oopsie.git
 
-# Navigate to the project directory
-cd ImpossibleTypingChallenge
 ```
 
 # Run
