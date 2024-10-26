@@ -16,53 +16,61 @@ const message = document.getElementById("message");
 const sentenceDisplay = document.getElementById("sentence");
 const refreshButton = document.getElementById("refreshButton");
 
-sentenceDisplay.textContent = `Type this: "${currentSentence}"`;
-
-function loadNewSentence() {
-  currentSentence = sentences[Math.floor(Math.random() * sentences.length)];
+function displaySentence() {
   sentenceDisplay.textContent = `Type this: "${currentSentence}"`;
   inputField.value = "";
   errorCount = 0;
   message.innerText = "Can you type it correctly?";
-  message.style.opacity = "1";  // Reset message opacity
+  message.style.opacity = "1";
+}
+
+function loadNewSentence() {
+  currentSentence = sentences[Math.floor(Math.random() * sentences.length)];
+  displaySentence();
 }
 
 refreshButton.addEventListener("click", loadNewSentence);
 
 inputField.addEventListener("keydown", (event) => {
   const currentTimestamp = Date.now();
+
+  // Backspace error tracking with a delay
   if (event.key === "Backspace" && currentTimestamp - lastBackspaceTimestamp > backspaceDelay) {
     errorCount++;
     lastBackspaceTimestamp = currentTimestamp;
+
     if (errorCount >= errorLimit) {
       loadNewSentence();
-      alert("Too hard? Try typing this:");
     }
   }
 });
 
 inputField.addEventListener("input", () => {
   const userTypedText = inputField.value;
-  message.style.opacity = "0.5";  // Dim message when user is typing
+  message.style.opacity = "0.5";
 
-  // Correct so far
+  // Checking if the input so far matches the sentence
   if (userTypedText.toLowerCase() === currentSentence.substring(0, userTypedText.length).toLowerCase()) {
-    inputField.style.transition = "color 0.3s";  // Smooth transition
-    inputField.style.color = "#000";  // Normal color
+    inputField.style.transition = "color 0.3s";
+    inputField.style.color = "#000";
 
     if (userTypedText.toLowerCase() === currentSentence.toLowerCase()) {
       message.innerText = "Great job! You typed it correctly!";
-      errorCount = 0; // Reset errors on success
+      errorCount = 0;
     }
   } else {
-    inputField.style.transition = "color 0.3s";  // Smooth transition
-    inputField.style.color = "red";  // Temporary error color
+    inputField.style.transition = "color 0.3s";
+    inputField.style.color = "red";
+
     setTimeout(() => {
-      inputField.style.color = "#000";  // Return to normal color
+      inputField.style.color = "#000";
     }, 500);
   }
 });
 
 inputField.addEventListener("focus", () => {
-  message.style.opacity = "1";  // Reset message opacity on focus
+  message.style.opacity = "1";
 });
+
+// Initial sentence display on load
+displaySentence();
