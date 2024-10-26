@@ -47,9 +47,9 @@ https://oopsie.vercel.app/
 For Software:
 
 # Screenshots (Add at least 3)
-(https://github.com/Navaneeth-Git/oopsie/blob/5cbcac5d0749a337800906d36224c889c31519c1/WhatsApp%20Image%202024-10-26%20at%2008.17.42.jpeg)
-(https://github.com/Navaneeth-Git/oopsie/blob/5cbcac5d0749a337800906d36224c889c31519c1/WhatsApp%20Image%202024-10-26%20at%2008.19.01.jpeg)
-(https://github.com/Navaneeth-Git/oopsie/blob/5cbcac5d0749a337800906d36224c889c31519c1/WhatsApp%20Image%202024-10-26%20at%2008.20.44.jpeg)
+
+![Screenshot1](WhatsApp Image 2024-10-26 at 08.17.42.jpeg)
+*Add caption explaining what this shows*
 
 
 ### Project Demo
