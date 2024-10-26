@@ -63,8 +63,10 @@ For Software:
 
 ## Team Contributions
 
-Navaneeth Nandakumar: Developed typo generation logic and interface.
-Arfan: Designed UI and refined CSS for better usability.
+-[Navaneeth Nandakumar]: [Developed typo generation logic and interface.]
+-[Arfan: Designed UI and refined CSS for better usability.]
+
+
 ---
 Made with ❤️ at TinkerHub Useless Projects by Arfan & Navaneeth
 
