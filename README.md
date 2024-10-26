@@ -47,14 +47,9 @@ https://oopsie.vercel.app/
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
-
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
-
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+WhatsApp Image 2024-10-26 at 08.17.42.jpeg
+WhatsApp Image 2024-10-26 at 08.19.01.jpeg
+WhatsApp Image 2024-10-26 at 08.20.44.jpeg
 
 ### Project Demo
 # Video
