@@ -47,15 +47,20 @@ https://oopsie.vercel.app/
 For Software:
 
 # Screenshots (Add at least 3)
+![WhatsApp Image 2024-10-26 at 08 17 42](https://github.com/user-attachments/assets/a9311fab-8c10-4421-a642-8097eecb0067)
+![WhatsApp Image 2024-10-26 at 08 19 01](https://github.com/user-attachments/assets/422297dd-4df0-4e0f-a10b-8ef1510b5e5d)
+![WhatsApp Image 2024-10-26 at 08 20 44](https://github.com/user-attachments/assets/fa28b9d1-83c8-4f5f-bdf3-9428ace8b9d0)
 
-![Screenshot1](WhatsApp Image 2024-10-26 at 08.17.42.jpeg)
-*Add caption explaining what this shows*
 
 
 ### Project Demo
 # Video
 
-[![Demo Video](Demo.mp4)](https://github.com/Navaneeth-Git/oopsie/blob/2c5d8050f411581402a1cde46cd852d083141bdc/Demo.mp4)
+[
+
+https://github.com/user-attachments/assets/f88eba70-5084-43e5-ba8b-8436227a42d6
+
+![Demo Video](Demo.mp4)](https://github.com/Navaneeth-Git/oopsie/blob/2c5d8050f411581402a1cde46cd852d083141bdc/Demo.mp4)
 
 ## Team Contributions
 
