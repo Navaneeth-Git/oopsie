@@ -41,23 +41,16 @@ h1 {
   margin-right: 10px;
 }
 
-.matched {
-  color: green;
-}
-
-#refreshButton,
-#difficultyToggle {
+#refreshButton {
   background-color: transparent;
   border: none;
   color: #4a4a4a;
   font-size: 1rem;
   cursor: pointer;
-  margin-left: 10px;
   transition: color 0.3s;
 }
 
-#refreshButton:hover,
-#difficultyToggle:hover {
+#refreshButton:hover {
   color: #000000;
 }
 
