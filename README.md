@@ -62,6 +62,7 @@ For Software:
 *Explain what the video demonstrates*
 
 ## Team Contributions
+
 Navaneeth Nandakumar: Developed typo generation logic and interface.
 Arfan: Designed UI and refined CSS for better usability.
 ---
