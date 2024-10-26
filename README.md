@@ -38,8 +38,7 @@ git clone https://github.com/yourusername/ImpossibleTypingChallenge.git
 
 # Navigate to the project directory
 cd ImpossibleTypingChallenge
-
-'''
+```
 ---
 Made with ❤️ at TinkerHub Useless Projects by Arfan & Navaneeth
 
