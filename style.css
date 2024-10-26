@@ -1,14 +1,13 @@
-/* Global Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Google Sans', sans-serif; /* Google Sans applied */
+  font-family: 'Google Sans', sans-serif;
 }
 
 body {
-  background-color: #ffffff; /* White background */
-  color: #000000; /* Black text color */
+  background-color: #ffffff;
+  color: #000000;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -24,11 +23,10 @@ body {
 /* Title */
 h1 {
   font-size: 2.5rem;
-  color: #000000; /* Black for the title */
+  color: #000000;
   margin-bottom: 1.5rem;
 }
 
-/* Sentence Container */
 .sentence-container {
   display: flex;
   justify-content: center;
@@ -36,71 +34,50 @@ h1 {
   margin-bottom: 1.5rem;
 }
 
-/* Sentence */
 #sentence {
   font-size: 1.2rem;
-  font-weight: bold; /* Bold the sentence */
-  color: #4a4a4a; /* Dark grey for the sentence */
+  font-weight: bold;
+  color: #4a4a4a;
   margin-right: 10px;
 }
 
-/* Refresh Button with Transparent Background */
-#refreshButton {
-  background-color: transparent; /* Transparent background */
+.matched {
+  color: green;
+}
+
+#refreshButton,
+#difficultyToggle {
+  background-color: transparent;
   border: none;
-  color: #4a4a4a; /* Dark grey icon color */
-  font-size: 1.5rem;
+  color: #4a4a4a;
+  font-size: 1rem;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-left: 10px;
   transition: color 0.3s;
 }
 
-#refreshButton:hover {
-  color: #000000; /* Darker icon color on hover */
+#refreshButton:hover,
+#difficultyToggle:hover {
+  color: #000000;
 }
 
-/* Input Field */
 #inputField {
   width: 100%;
   padding: 12px;
   font-size: 1.2rem;
-  background-color: #f0f0f0; /* Light grey background for the text input */
-  color: #000000; /* Black text */
-  border: none; /* No border */
-  border-radius: 60px; /* More rounded corners */
+  background-color: #f0f0f0;
+  color: #000000;
+  border: none;
+  border-radius: 60px;
   outline: none;
 }
 
 #inputField::placeholder {
-  color: #757575; /* Medium grey for the placeholder */
+  color: #757575;
 }
 
-/* Message Text */
 #message {
   margin-top: 1.5rem;
-  color: #4a4a4a; /* Dark grey for the message */
+  color: #4a4a4a;
   font-size: 1rem;
-}
-
-/* Refresh Button with PNG Image */
-#refreshButton {
-  background-color: transparent; /* Transparent background */
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: color 0.3s;
-}
-
-#refreshButton img {
-  width: 24px; /* Set image size */
-  height: 24px;
-}
-
-#refreshButton:hover img {
-  filter: brightness(0.7); /* Darker icon color on hover */
 }
