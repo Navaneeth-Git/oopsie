@@ -16,7 +16,7 @@ body {
 
 .container {
   text-align: center;
-  width: 100%;
+  width: 90%;
   max-width: 600px;
 }
 
@@ -80,4 +80,20 @@ h1 {
   margin-top: 1.5rem;
   color: #4a4a4a;
   font-size: 1rem;
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  #sentence, #message {
+    font-size: 1rem;
+  }
+
+  #inputField {
+    padding: 10px;
+    font-size: 1rem;
+  }
 }
