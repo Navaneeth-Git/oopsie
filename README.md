@@ -59,7 +59,7 @@ For Software:
 ### Project Demo
 # Video
 
-![Demo Video](Demo.mp4)
+[![Demo Video](Demo.mp4)](https://github.com/Navaneeth-Git/oopsie/blob/2c5d8050f411581402a1cde46cd852d083141bdc/Demo.mp4)
 
 ## Team Contributions
 
